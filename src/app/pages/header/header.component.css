@@ -1,0 +1,179 @@
+.fondo {
+  background-image: url('../../../assets/img/header-HR2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contenedor {
+  margin-top: 75%;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    margin-top: 10% !important;
+  }
+}
+
+.color-dark {
+  color: black;
+}
+
+.back-color {
+  border-radius: 1rem;
+}
+
+span.fix-text {
+  background-color: #ececec;
+  border-radius: 1rem;
+  padding: 0 8px;
+}
+
+.human-red {
+  color: #ee473f;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a.btn {
+  font-size: 18px;
+  padding: 20px 40px;
+  filter: none;
+}
+
+@media (max-width: 768px) {
+  div.consultores {
+    font-size: 35px !important;
+  }
+
+  a.btn {
+    font-size: 12px;
+    padding: 15px 30px;
+  }
+}
+
+div a.btn.btn-primary:hover {
+  animation-name: none;
+  animation-iteration-count: none;
+  animation-direction: none;
+  animation-duration: none;
+  animation-timing-function: none;
+}
+
+/* Keyframe */
+.start {
+  animation-name: start;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+  animation-duration: 3s;
+  animation-timing-function: linear, ease-in-out;
+}
+
+
+@keyframes start {
+  0% {
+    opacity: 1;
+    /* background-color: #ee473f; */
+  }
+
+  20% {
+    opacity: .9;
+    /* background-color: #dd3e35; */
+  }
+
+  40% {
+    opacity: .8;
+    /* background-color: #cf372f; */
+  }
+
+  60% {
+    opacity: .8;
+    /* background-color: #c42e26; */
+  }
+
+  80% {
+    opacity: .9;
+    /* background-color: #b1241c; */
+  }
+
+  100% {
+    opacity: 1;
+    /* background-color: #ee473f; */
+  }
+}
+
+.back {
+  position: relative;
+}
+
+.circulo-gris {
+  transform: scale(1.6);
+  position: absolute;
+  top: -15%;
+}
+
+.circulo-rojo {
+  transform: scale(0.4);
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
+.logoResp {
+  width: 60%;
+  margin-top: 15%;
+}
+
+a.verMas,
+a.verMas:hover {
+  color: white;
+  cursor: pointer
+}
+
+@media (max-width: 450px) {
+  .circulo-gris {
+    transform: scale(1.2);
+    top: -50%;
+  }
+
+  .circulo-rojo {
+    transform: scale(0.3);
+    top: -20%;
+    left: 16%;
+  }
+
+  .logoResp {
+    width: 90%;
+    margin-top: 35%;
+  }
+
+  a.verMas {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .circulo-gris {
+    transform: scale(1.2);
+    top: -60%;
+  }
+
+  .circulo-rojo {
+    transform: scale(0.3);
+    top: -30%;
+    left: 16%;
+  }
+
+  .logoResp {
+    width: 90%;
+    margin-top: 0%;
+  }
+
+  a.verMas {
+    margin-top: 20%;
+
+  }
+}

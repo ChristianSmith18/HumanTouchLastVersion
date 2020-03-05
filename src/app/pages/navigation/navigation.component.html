@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+  <div class="container">
+    <a style="cursor: pointer">
+      <img class="logo" src="../../../assets/img/logo_humantouch2.png" alt="logo" width="290" (click)="onClick('#')" />
+    </a>
+    <button class="navbar-toggler navbar-toggler-right margin-button" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation" (click)="onClick()">
+      <span *ngIf="!mostrar">Menu</span>
+      <span *ngIf="mostrar">Cerrar</span>
+      <i class="fas fa-bars"></i>
+    </button>
+    <div [ngClass]="{'activar': mostrar}" class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li [ngClass]="{'item-fix': mostrar}" class="nav-item">
+          <a class="nav-link js-scroll-trigger" (click)="onClick('services')">Servicios</a>
+        </li>
+        <li [ngClass]="{'item-fix': mostrar}" class="nav-item">
+          <a class="nav-link js-scroll-trigger" (click)="onClick('about')">Nosotros</a>
+        </li>
+        <li [ngClass]="{'item-fix': mostrar}" class="nav-item">
+          <a class="nav-link js-scroll-trigger" (click)="onClick('team')">Equipo</a>
+        </li>
+        <li [ngClass]="{'item-fix': mostrar}" class="nav-item">
+          <a class="nav-link js-scroll-trigger" (click)="onClick('clientes')">Clientes</a>
+        </li>
+        <li [ngClass]="{'item-fix': mostrar}" class="nav-item">
+          <a class="nav-link js-scroll-trigger" (click)="onClick('partners')">Partners</a>
+        </li>
+        <li [ngClass]="{'item-fix': mostrar}" class="nav-item">
+          <a class="nav-link js-scroll-trigger" (click)="onClick('contacto')">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

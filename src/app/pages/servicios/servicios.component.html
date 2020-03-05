@@ -1,0 +1,87 @@
+<div id="services"></div>
+<section class="bg-light page-section" id="portfolio">
+  <arrow-up [acceso]='permitir' [ruta]='rutaUp'></arrow-up>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Servicios</h2>
+        <!-- <button (click)="agregarUsuario()">SUBIR</button> -->
+      </div>
+    </div>
+    <div class="row" style="transform: scale(0.9);">
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" [swal]="sweetAlert(0)" title="Click para más información">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="ion-ios-add-circle-outline"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="../../../assets/img/cajas/gestion-de-personas.jpg" alt="Gestión de Personas">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Gestión de</h4>
+          <h4>personas</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" [swal]="sweetAlert(1)" title="Click para más información">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="ion-ios-add-circle-outline"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="../../../assets/img/cajas/assessment-on-line.jpg" alt="Assessment Online">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Assessment</h4>
+          <p class="text-muted">on line</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" [swal]="sweetAlert(2)" title="Click para más información">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="ion-ios-add-circle-outline"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="../../../assets/img/cajas/job-hunter.jpg" alt="Job Hunter">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Job</h4>
+          <h4>Hunter</h4>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6"></div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" [swal]="sweetAlert(3)" title="Click para más información">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="ion-ios-add-circle-outline"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="../../../assets/img/cajas/empleo-pesd.jpg" alt="Empleo de PeSD">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Empleo</h4>
+          <p class="text-muted">de PeSD</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" [swal]="sweetAlert(4)" title="Click para más información">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="ion-ios-add-circle-outline"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="../../../assets/img/cajas/upgrade-profesional.jpg" alt="Upgrade Profesional">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Upgrade</h4>
+          <p class="text-muted">profesional</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6"></div>
+    </div>
+  </div>
+  <arrow-down [acceso]='permitir' [ruta]='rutaDown'></arrow-down>
+</section>

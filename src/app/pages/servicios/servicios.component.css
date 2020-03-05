@@ -1,0 +1,7 @@
+.portfolio-caption h4,
+.portfolio-caption p {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}

@@ -1,0 +1,14 @@
+#roadBar {
+  background-color: #ee473f;
+  height: 5px;
+  width: 1%;
+  position: fixed;
+  top: 83px;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  #roadBar {
+    top: 54px;
+  }
+}

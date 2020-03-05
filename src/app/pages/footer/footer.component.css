@@ -1,0 +1,47 @@
+.footer {
+  padding: 14px 0;
+  background-color: #E9E9E9;
+}
+
+.movil-fix {
+  border-bottom: 1px #212529 solid;
+  padding-top: 15px;
+}
+
+.movil-fix:last-child {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .padding-fix {
+    padding-top: 1%;
+  }
+
+  .movil-fix {
+    border-bottom: none;
+    padding-top: 0;
+  }
+}
+
+p.autor {
+  margin: -10px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-size: 1.2rem;
+  -webkit-user-select: none;
+}
+p.autor a {
+  transition: all ease-in-out .3s;
+}
+
+p.autor a:hover {
+  color: #08a0b4;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  p.autor a {
+    color: #08a0b4;
+  }
+}

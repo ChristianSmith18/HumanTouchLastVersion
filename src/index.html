@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Humantouch</title>
+
+  <!-- Custom fonts for this project -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif|Raleway|Roboto|Dancing+Script&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body id="page-top">
+  <app-root></app-root>
+</body>
+<script>
+  let show = true;
+  function ctswal2(bool) {
+    (bool) ? (show = true) : (show = false);
+    if (show) {
+      document.getElementById('tPersonas').classList.add('active');
+      document.getElementById('tCorporativos').classList.remove('active');
+      document.getElementById('tTexto1').style.display = 'block';
+      document.getElementById('tTexto2').style.display = 'none';
+    } else {
+      document.getElementById('tPersonas').classList.remove('active');
+      document.getElementById('tCorporativos').classList.add('active');
+      document.getElementById('tTexto1').style.display = 'none';
+      document.getElementById('tTexto2').style.display = 'block';
+    }
+  }
+</script>
+
+</html>

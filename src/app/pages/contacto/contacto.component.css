@@ -1,0 +1,19 @@
+section {
+  padding: 51px 0;
+  background-color: #f1f1f1 !important;
+  margin-top: 25px !important;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  transition: border-color ease-in-out .4s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ee473f !important;
+}

@@ -1,0 +1,21 @@
+.team-member {
+  transform: scale(0.9) !important;
+}
+.team-member-sub {
+  transform: scale(0.8) !important;
+}
+
+@media (max-width:768px) {
+  .team-member-sub {
+    margin-bottom: -50px;
+  }
+
+  .team-member-sub:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.team-member img,
+.team-member-sub img {
+  filter: grayscale(1);
+}

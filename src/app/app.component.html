@@ -1,0 +1,43 @@
+<div *ngIf="!cargado" class="text-center">
+  <app-loading></app-loading>
+</div>
+
+<div (window:scroll)="doSomethingOnInternalScroll($event)" *ngIf="cargado">
+  <!-- Navbar -->
+  <div [@inOutAnimation] *ngIf="navbar">
+    <app-navigation></app-navigation>
+    <div id="roadBar"></div>
+  </div>
+
+  <!-- Header -->
+  <app-header></app-header>
+
+  <!-- Portfolio Grid -->
+  <app-servicios></app-servicios>
+
+  <!-- About -->
+  <app-about></app-about>
+
+  <!-- Futuro -->
+  <app-futuro></app-futuro>
+
+  <!-- Team -->
+  <app-equipo></app-equipo>
+
+  <!-- Clients -->
+  <app-clientes></app-clientes>
+
+  <!-- Maps -->
+  <app-map></app-map>
+
+  <!-- Partners -->
+  <app-partners></app-partners>
+
+  <!-- Contact -->
+  <app-contacto></app-contacto>
+
+  <!-- Footer -->
+  <app-footer></app-footer>
+</div>
+
+<router-outlet></router-outlet>

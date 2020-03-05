@@ -1,0 +1,16 @@
+<arrow-up id="clientes" [acceso]="permitir" [ruta]="rutaUp"></arrow-up>
+<section class="py-5" style="background-color: #f3f3f3e5;">
+  <div class="container">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading text-uppercase" style="margin-bottom: -88px">Nuestros clientes</h2>
+    </div>
+    <div class="desktop-display" style="background: transparent; margin-bottom: -88px">
+      <rotate-carousel height="500px" width="275px" depth="700px" period="10s" direction="reverse">
+        <ng-template *ngFor="let cliente of clientes" rotateCarouselItem draggable="false">
+          <img class="img-fluid d-block mx-auto agency-style" [title]="cliente[1]" [src]="cliente[0]" style="background: white" width='55%' draggable="false ">
+        </ng-template>
+      </rotate-carousel>
+    </div>
+  </div>
+  <!-- <arrow-down [acceso]="permitir" [ruta]="rutaDown"></arrow-down> -->
+</section>
